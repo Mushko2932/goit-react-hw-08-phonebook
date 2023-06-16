@@ -3,8 +3,8 @@ import * as Yup from 'yup';
 import { useDispatch, useSelector } from 'react-redux';
 import Notiflix from 'notiflix';
 import { Form, FormLabel, FormBtn, Field } from './ContactsForm.styled';
-import { selectContactsList } from 'redux/selectors';
-import { addContact } from 'redux/operations';
+import { selectContactsList } from 'redux/contacts/selectors';
+import { addContact } from 'redux/auth/operations';
 
 const ContactShema = Yup.object().shape({
   name: Yup.string()

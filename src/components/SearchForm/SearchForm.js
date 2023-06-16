@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { selectContactsFilter } from 'redux/selectors';
-import { setContactsFilter } from 'redux/filterSlice';
+import { selectContactsFilter } from 'redux/contacts/selectors';
+import { setContactsFilter } from 'redux/contacts/filterSlice';
 import { Filter, FilterField } from './SearchForm.styled';
 
 export const SearchForm = () => {
