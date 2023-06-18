@@ -10,6 +10,7 @@ export const SearchForm = () => {
   const handleChange = e => {
     dispatch(setContactsFilter(e.target.value));
   };
+
   return (
     <Filter>
       Find contacts by name
