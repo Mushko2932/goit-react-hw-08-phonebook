@@ -1,14 +1,12 @@
 import styled from '@emotion/styled';
 import { NavLink } from 'react-router-dom';
 
-export const Logo = styled(NavLink)`
+export const NavLogo = styled(NavLink)`
   text-decoration: none;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 800;
   font-size: 36px;
-
-  margin-right: 114px;
 
   color: #0079ff;
 

@@ -4,17 +4,17 @@ import { useDispatch } from 'react-redux';
 import { Form, FormLabel, FormBtn, Field } from './RegisterForm.styled';
 import { register } from 'redux/auth/operations';
 
-const ContactShema = Yup.object().shape({
+const ContactSchema = Yup.object().shape({
   name: Yup.string()
-    .min(2, 'Too Short!')
+    .min(6, 'Too Short!')
     .max(50, 'Too Long!')
     .required('Required'),
   email: Yup.string()
-    .min(2, 'Too Short!')
+    .min(6, 'Too Short!')
     .max(13, 'Too Long!')
     .required('Required'),
   password: Yup.string()
-    .min(2, 'Too Short!')
+    .min(6, 'Too Short!')
     .max(13, 'Too Long!')
     .required('Required'),
 });
@@ -25,7 +25,7 @@ export const RegisterForm = () => {
   return (
     <Formik
       initialValues={{ name: '', email: '', password: '' }}
-      validationSchema={ContactShema}
+      validationSchema={ContactSchema}
       onSubmit={(values, actions) => {
         dispatch(register({ ...values }));
         actions.resetForm();
@@ -33,11 +33,11 @@ export const RegisterForm = () => {
     >
       <Form>
         <FormLabel htmlFor="name">
-          NAME
+          Name
           <Field type="text" name="name" />
         </FormLabel>
         <FormLabel htmlFor="email">
-          EMAIL
+          Email
           <Field
             type="email"
             name="email"
@@ -46,7 +46,7 @@ export const RegisterForm = () => {
           />
         </FormLabel>
         <FormLabel htmlFor="password">
-          PASSWORD
+          Password
           <Field
             type="password"
             name="password"

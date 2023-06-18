@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 export const LoggedList = styled.ul`
   display: flex;
   gap: 10px;
-  margin-left: auto;
+  padding: 0;
 `;
 
 export const LoggedListItem = styled.li`
@@ -16,12 +16,12 @@ export const LoggedLink = styled(NavLink)`
   display: block;
   font-weight: 600;
   font-size: 20px;
-  padding: 20px 30px;
+  padding: 20px 40px;
 
   color: #feff86;
   background-color: #0079ff;
 
-  border-radius: 14px;
+  border-radius: 10px;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
