@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/goit-react-hw-08-phonebook/static/css/main.7acaea2f.css",
-    "main.js": "/goit-react-hw-08-phonebook/static/js/main.2038a34c.js",
+    "main.js": "/goit-react-hw-08-phonebook/static/js/main.0068d9a3.js",
     "static/js/75.238f5747.chunk.js": "/goit-react-hw-08-phonebook/static/js/75.238f5747.chunk.js",
-    "static/js/511.c08b8aa1.chunk.js": "/goit-react-hw-08-phonebook/static/js/511.c08b8aa1.chunk.js",
+    "static/js/511.7ba35294.chunk.js": "/goit-react-hw-08-phonebook/static/js/511.7ba35294.chunk.js",
     "static/js/380.044f7e0d.chunk.js": "/goit-react-hw-08-phonebook/static/js/380.044f7e0d.chunk.js",
     "static/js/402.ee493fff.chunk.js": "/goit-react-hw-08-phonebook/static/js/402.ee493fff.chunk.js",
     "static/js/568.27a0cf12.chunk.js": "/goit-react-hw-08-phonebook/static/js/568.27a0cf12.chunk.js",
     "static/js/686.fcaf303a.chunk.js": "/goit-react-hw-08-phonebook/static/js/686.fcaf303a.chunk.js",
     "index.html": "/goit-react-hw-08-phonebook/index.html",
     "main.7acaea2f.css.map": "/goit-react-hw-08-phonebook/static/css/main.7acaea2f.css.map",
-    "main.2038a34c.js.map": "/goit-react-hw-08-phonebook/static/js/main.2038a34c.js.map",
+    "main.0068d9a3.js.map": "/goit-react-hw-08-phonebook/static/js/main.0068d9a3.js.map",
     "75.238f5747.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/75.238f5747.chunk.js.map",
-    "511.c08b8aa1.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/511.c08b8aa1.chunk.js.map",
+    "511.7ba35294.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/511.7ba35294.chunk.js.map",
     "380.044f7e0d.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/380.044f7e0d.chunk.js.map",
     "402.ee493fff.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/402.ee493fff.chunk.js.map",
     "568.27a0cf12.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/568.27a0cf12.chunk.js.map",
@@ -20,6 +20,6 @@
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.2038a34c.js"
+    "static/js/main.0068d9a3.js"
   ]
 }
