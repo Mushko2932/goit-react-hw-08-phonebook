@@ -1,7 +1,7 @@
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 import { useDispatch } from 'react-redux';
-import { Form, FormLabel, FormBtn, Field } from './ContactsForm.styled';
+import { Form, FormLabel, FormBtn, Field } from './LoginForm.styled';
 import { logIn } from 'redux/auth/operations';
 
 const ContactShema = Yup.object().shape({
