@@ -30,11 +30,21 @@ export const LoginForm = () => {
       <Form>
         <FormLabel htmlFor="email">
           EMAIL
-          <Field type="email" name="email" />
+          <Field
+            type="email"
+            name="email"
+            required
+            placeholder="Enter email ..."
+          />
         </FormLabel>
         <FormLabel htmlFor="password">
           PASSWORD
-          <Field type="password" name="password" />
+          <Field
+            type="password"
+            name="password"
+            required
+            placeholder="Enter password ..."
+          />
         </FormLabel>
         <FormBtn type="submit">LOG IN</FormBtn>
       </Form>

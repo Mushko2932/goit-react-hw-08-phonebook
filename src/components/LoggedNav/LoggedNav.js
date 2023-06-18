@@ -1,15 +1,15 @@
-const { NavLink } = require('react-router-dom');
+import { LoggedLink, LoggedList, LoggedListItem } from './LoggedNav.styled';
 
 const LoggedNav = () => {
   return (
-    <ul>
-      <li>
-        <NavLink to="login">LOGIN</NavLink>
-      </li>
-      <li>
-        <NavLink to="register">REGISTER</NavLink>
-      </li>
-    </ul>
+    <LoggedList>
+      <LoggedListItem>
+        <LoggedLink to="login">LOGIN</LoggedLink>
+      </LoggedListItem>
+      <LoggedListItem>
+        <LoggedLink to="register">REGISTER</LoggedLink>
+      </LoggedListItem>
+    </LoggedList>
   );
 };
 

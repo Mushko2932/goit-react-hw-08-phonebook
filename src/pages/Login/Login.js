@@ -1,7 +1,7 @@
-import { ContactsForm } from 'components/ContactsForm/ContactsForm';
+import { LoginForm } from 'components/LoginForm/LoginForm';
 
 const Login = () => {
-  return <ContactsForm />;
+  return <LoginForm />;
 };
 
 export default Login;
