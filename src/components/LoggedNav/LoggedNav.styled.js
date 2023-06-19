@@ -28,7 +28,7 @@ export const LoggedLink = styled(NavLink)`
 
   :hover,
   :focus {
-    color: #000000;
+    color: #0079ff;
     background-color: #feff86;
   }
 `;

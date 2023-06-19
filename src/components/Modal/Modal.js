@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import { useEffect } from 'react';
 
+const modalRoot = document.querySelector('#modal-root');
+
 export const Modal = ({ children, oncloseModal }) => {
   useEffect(() => {
     const handleKeydown = e => {
@@ -23,13 +25,16 @@ export const Modal = ({ children, oncloseModal }) => {
   };
 
   return (
-    <div onClick={handleDackdropClick}>
-      <div>{children}</div>
-    </div>
+    (
+      <div onClick={handleDackdropClick}>
+        <div>{children}</div>
+      </div>
+    ),
+    modalRoot
   );
 };
 
 Modal.propTypes = {
-  children: PropTypes.node,
-  oncloseModal: PropTypes.func,
+  children: PropTypes.node.isRequired,
+  oncloseModal: PropTypes.func.isRequired,
 };
