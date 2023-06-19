@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { logOut } from 'redux/auth/operations';
 import { useAuth } from 'hooks/useAuth';
+import { UserName, UserEmail, UserAvatar, LogOutBtn } from './UserMenu.styled';
 
 const UserMenu = () => {
   const dispatch = useDispatch();
@@ -9,13 +10,13 @@ const UserMenu = () => {
   return (
     <div>
       <div>
-        <p>{user.name}</p>
-        <p>{user.email}</p>
-        <div>avatar</div>
+        <UserName>{user.name}</UserName>
+        <UserEmail>{user.email}</UserEmail>
+        <UserAvatar></UserAvatar>
       </div>
-      <button type="button" onClick={() => dispatch(logOut())}>
+      <LogOutBtn type="button" onClick={() => dispatch(logOut())}>
         Logout
-      </button>
+      </LogOutBtn>
     </div>
   );
 };

@@ -34,7 +34,12 @@ export const RegisterForm = () => {
       <Form>
         <FormLabel htmlFor="name">
           Name
-          <Field type="text" name="name" />
+          <Field
+            type="text"
+            name="name"
+            required
+            placeholder="Enter name ..."
+          />
         </FormLabel>
         <FormLabel htmlFor="email">
           Email
