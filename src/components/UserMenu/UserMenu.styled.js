@@ -2,13 +2,13 @@ import styled from '@emotion/styled';
 
 export const UserContainer = styled.div`
   display: flex;
-  flex-direction: column;
 `;
 
 export const UserData = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 20px;
 `;
 
 export const UserName = styled.p`
@@ -42,7 +42,7 @@ export const UserAvatar = styled.div`
 `;
 
 export const LogOutBtn = styled.button`
-  display: block;
+  display: inline-block;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;

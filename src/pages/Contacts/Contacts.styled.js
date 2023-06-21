@@ -11,7 +11,7 @@ export const PageContainer = styled.div`
 export const ContactNavWrapper = styled.div`
   display: flex;
   align-items: center;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 `;
 export const Title = styled.h2`
   font-weight: 700;
