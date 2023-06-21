@@ -7,7 +7,13 @@ import { ContactsForm } from 'components/ContactsForm/ContactsForm';
 import { SearchForm } from 'components/SearchForm/SearchForm';
 import { ContactList } from 'components/ContactList/ContactList';
 import { Modal } from 'components/Modal/Modal';
-import { NewContactBtn } from './Contacts.styled';
+import {
+  NewContactBtn,
+  PageContainer,
+  ContactNavWrapper,
+  Title,
+  FilterWrapper,
+} from './Contacts.styled';
 
 const Contacts = () => {
   const dispatch = useDispatch();
@@ -24,17 +30,17 @@ const Contacts = () => {
   };
 
   return (
-    <div>
+    <PageContainer>
       <Section>
-        <div>
-          <h2>CONTACTS</h2>
-          <div>
+        <ContactNavWrapper>
+          <Title>CONTACTS</Title>
+          <FilterWrapper>
             <SearchForm />
             <NewContactBtn type="button" onClick={handleOpenModal}>
               Add contact
             </NewContactBtn>
-          </div>
-        </div>
+          </FilterWrapper>
+        </ContactNavWrapper>
         {isLoading && !error && <b>Request in progress...</b>}
         <ContactList />
       </Section>
@@ -48,7 +54,7 @@ const Contacts = () => {
           onCloseModal={handleOpenModal}
         ></Modal>
       )}
-    </div>
+    </PageContainer>
   );
 };
 

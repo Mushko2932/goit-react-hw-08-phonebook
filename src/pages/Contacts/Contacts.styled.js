@@ -1,5 +1,30 @@
 import styled from '@emotion/styled';
 
+export const PageContainer = styled.div`
+  padding: 30px 30px;
+  height: 100vh;
+
+  border-radius: 32px;
+  background-color: #f9f9f9;
+`;
+
+export const ContactNavWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 28px;
+`;
+export const Title = styled.h2`
+  font-weight: 700;
+  font-size: 34px;
+
+  margin: 0;
+`;
+
+export const FilterWrapper = styled.div`
+  display: flex;
+  margin-left: auto;
+`;
+
 export const NewContactBtn = styled.button`
   display: block;
   font-style: normal;
