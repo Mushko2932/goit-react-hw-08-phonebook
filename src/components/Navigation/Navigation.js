@@ -1,6 +1,11 @@
 import { useAuth } from 'hooks/useAuth';
 // import { NavLink } from 'react-router-dom';
-import { NavLogo, MainNavLink } from './Navigation.styled';
+import {
+  NavLogo,
+  MainNavLink,
+  MainNavItem,
+  MainNavList,
+} from './Navigation.styled';
 
 const Navigation = () => {
   const { isLoggedIn } = useAuth();
@@ -9,11 +14,11 @@ const Navigation = () => {
       <NavLogo to="/">Phone book</NavLogo>
       <nav>
         {isLoggedIn && (
-          <ul>
-            <li>
+          <MainNavList>
+            <MainNavItem>
               <MainNavLink to="/contacts">CONTACTS</MainNavLink>
-            </li>
-          </ul>
+            </MainNavItem>
+          </MainNavList>
         )}
       </nav>
     </>

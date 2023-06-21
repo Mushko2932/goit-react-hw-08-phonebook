@@ -21,6 +21,15 @@ export const NavLogo = styled(NavLink)`
   }
 `;
 
+export const MainNavList = styled.ul`
+  display: flex;
+  align-items: center;
+`;
+
+export const MainNavItem = styled.li`
+  list-style: none;
+`;
+
 export const MainNavLink = styled(NavLink)`
   text-decoration: none;
   display: block;
@@ -38,7 +47,7 @@ export const MainNavLink = styled(NavLink)`
 
   :hover,
   :focus {
-    color: #000000;
+    color: #0079ff;
     background-color: #feff86;
   }
 `;

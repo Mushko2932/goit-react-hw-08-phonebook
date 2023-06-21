@@ -7,6 +7,7 @@ import { ContactsForm } from 'components/ContactsForm/ContactsForm';
 import { SearchForm } from 'components/SearchForm/SearchForm';
 import { ContactList } from 'components/ContactList/ContactList';
 import { Modal } from 'components/Modal/Modal';
+import { NewContactBtn } from './Contacts.styled';
 
 const Contacts = () => {
   const dispatch = useDispatch();
@@ -29,7 +30,9 @@ const Contacts = () => {
           <h2>CONTACTS</h2>
           <div>
             <SearchForm />
-            <button type="button" onClick={handleOpenModal}></button>
+            <NewContactBtn type="button" onClick={handleOpenModal}>
+              Add contact
+            </NewContactBtn>
           </div>
         </div>
         {isLoading && !error && <b>Request in progress...</b>}

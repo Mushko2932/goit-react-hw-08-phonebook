@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { useEffect } from 'react';
+import { Overlay, ModalWindow } from './Modal.styled';
 
 const modalRoot = document.querySelector('#modal-root');
 
@@ -26,9 +27,9 @@ export const Modal = ({ children, oncloseModal }) => {
 
   return (
     (
-      <div onClick={handleDackdropClick}>
-        <div>{children}</div>
-      </div>
+      <Overlay onClick={handleDackdropClick}>
+        <ModalWindow>{children}</ModalWindow>
+      </Overlay>
     ),
     modalRoot
   );
