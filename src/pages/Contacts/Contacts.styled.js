@@ -13,6 +13,7 @@ export const ContactNavWrapper = styled.div`
   align-items: center;
   margin-bottom: 20px;
 `;
+
 export const Title = styled.h2`
   font-weight: 700;
   font-size: 34px;

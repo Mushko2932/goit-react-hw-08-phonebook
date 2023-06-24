@@ -42,13 +42,15 @@ export const UserAvatar = styled.div`
 `;
 
 export const LogOutBtn = styled.button`
-  display: inline-block;
+  display: block;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
 
   padding: 20px 30px;
   text-align: center;
+  width: 200px;
+  height: 60px;
 
   color: #feff86;
   background-color: #0079ff;
