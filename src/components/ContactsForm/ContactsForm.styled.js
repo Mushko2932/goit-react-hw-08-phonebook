@@ -24,12 +24,13 @@ export const FormBtn = styled.button`
   width: 340px;
   height: 30px;
   cursor: pointer;
-  background-color: grey;
+  background-color: #0079ff;
   border: none;
   border-radius: 4px;
   box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
-  &:hover {
-    background-color: aquamarine;
-    color: white;
+  :hover,
+  :focus {
+    color: #0079ff;
+    background: #feff86;
   }
 `;

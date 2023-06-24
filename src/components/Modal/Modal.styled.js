@@ -14,13 +14,12 @@ export const Overlay = styled.div`
 `;
 
 export const ModalWindow = styled.div`
-  border-radius: 20px;
+  border-radius: 8px;
   overflow: hidden;
 
   max-width: calc(100vw - 48px);
   max-height: calc(100vh - 24px);
 
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 30px;
   background-color: #f9f9f9;
 `;

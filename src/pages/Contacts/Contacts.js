@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchContacts } from 'redux/contacts/operations';
 import { selectIsLoading, selectError } from 'redux/contacts/selectors';
-import { Section } from 'components/Section/Section';
+// import { Section } from 'components/Section/Section';
 import { ContactsForm } from 'components/ContactsForm/ContactsForm';
 import { SearchForm } from 'components/SearchForm/SearchForm';
 import { ContactList } from 'components/ContactList/ContactList';
@@ -31,26 +31,21 @@ const Contacts = () => {
 
   return (
     <PageContainer>
-      <Section>
-        <ContactNavWrapper>
-          <Title>CONTACTS</Title>
-          <FilterWrapper>
-            <SearchForm />
-            <NewContactBtn type="button" onClick={handleOpenModal}>
-              Add contact
-            </NewContactBtn>
-          </FilterWrapper>
-        </ContactNavWrapper>
-        {isLoading && !error && <b>Request in progress...</b>}
-        <ContactList />
-      </Section>
+      <ContactNavWrapper>
+        <Title>CONTACTS</Title>
+        <FilterWrapper>
+          <SearchForm />
+          <NewContactBtn type="button" onClick={handleOpenModal}>
+            Add contact
+          </NewContactBtn>
+        </FilterWrapper>
+      </ContactNavWrapper>
+      {isLoading && !error && <b>Request in progress...</b>}
+      <ContactList />
+
       {isShowModalAddUser && (
         <Modal
-          children={
-            <Section title="Add New Contact">
-              <ContactsForm onCloseModal={handleOpenModal} />
-            </Section>
-          }
+          children={<ContactsForm onCloseModal={handleOpenModal} />}
           onCloseModal={handleOpenModal}
         ></Modal>
       )}

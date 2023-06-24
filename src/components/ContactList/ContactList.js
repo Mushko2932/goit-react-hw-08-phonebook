@@ -10,9 +10,9 @@ export const ContactList = () => {
   const contacts = useSelector(selectContactsList);
   const filter = useSelector(selectContactsFilter);
 
-  const normalizedFilter = filter.toLowerCase();
+  // const normalizedFilter = filter.toLowerCase();
   const visibleContacts = contacts.filter(contact =>
-    contact.name.toString().toLowerCase().includes(normalizedFilter)
+    contact.name.toLowerCase().includes(filter)
   );
 
   return (
