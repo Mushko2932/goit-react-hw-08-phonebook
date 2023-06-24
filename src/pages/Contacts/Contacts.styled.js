@@ -32,6 +32,7 @@ export const NewContactBtn = styled.button`
   font-weight: 600;
   font-size: 18px;
 
+  margin-top: 14px;
   padding: 20px 30px;
   width: 200px;
   height: 60px;

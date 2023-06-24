@@ -17,7 +17,7 @@ const ContactShema = Yup.object().shape({
     .required('Required'),
 });
 
-export const ContactsForm = () => {
+export const ContactsForm = ({ onCloseModal }) => {
   const dispatch = useDispatch();
   const contacts = useSelector(selectContactsList);
 
@@ -33,6 +33,7 @@ export const ContactsForm = () => {
       return;
     }
     dispatch(addContact(newContact));
+    onCloseModal();
   };
   return (
     <Formik

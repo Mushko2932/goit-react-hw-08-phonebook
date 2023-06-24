@@ -5,7 +5,6 @@ export const Container = styled.div`
   flex-direction: column;
   gap: 10px;
   width: 400px;
-  margin-bottom: 20px;
 `;
 
 export const Filter = styled.label`
@@ -18,7 +17,7 @@ export const Filter = styled.label`
 `;
 
 export const FilterField = styled.input`
-  width: 340px;
+  width: 250px;
   height: 30px;
   border: 0;
   border-radius: 4px;
