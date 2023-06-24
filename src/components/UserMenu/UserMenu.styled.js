@@ -36,8 +36,8 @@ export const UserAvatar = styled.div`
 
   text-align: center;
 
-  background-color: #efefef;
-  border-radius: 14px;
+  background-color: #000000;
+  border-radius: 8px;
   margin-bottom: 20px;
 `;
 

@@ -16,7 +16,7 @@ const Navigation = () => {
         {isLoggedIn && (
           <MainNavList>
             <MainNavItem>
-              <MainNavLink to="/contacts">CONTACTS</MainNavLink>
+              <MainNavLink to="/contacts">Contacts</MainNavLink>
             </MainNavItem>
           </MainNavList>
         )}

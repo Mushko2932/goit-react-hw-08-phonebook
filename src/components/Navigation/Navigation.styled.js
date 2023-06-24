@@ -31,7 +31,7 @@ export const MainNavLink = styled(NavLink)`
   text-decoration: none;
   display: block;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   padding: 20px 30px;
 
   color: #feff86;

@@ -5,7 +5,7 @@ export const PageContainer = styled.div`
   height: 100vh;
 
   border-radius: 32px;
-  background-color: #f9f9f9;
+  background-color: #ece5c7;
 `;
 
 export const ContactNavWrapper = styled.div`
@@ -33,10 +33,15 @@ export const NewContactBtn = styled.button`
   font-size: 18px;
 
   padding: 20px 30px;
+  width: 200px;
+  height: 60px;
   text-align: center;
 
-  color: #ffffff;
+  color: #feff86;
   background-color: #0079ff;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   border: none;
   border-radius: 14px;

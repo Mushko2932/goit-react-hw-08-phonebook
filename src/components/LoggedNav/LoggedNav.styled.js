@@ -21,7 +21,7 @@ export const LoggedLink = styled(NavLink)`
   color: #feff86;
   background-color: #0079ff;
 
-  border-radius: 10px;
+  border-radius: 8px;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
