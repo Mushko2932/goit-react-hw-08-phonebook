@@ -19,8 +19,8 @@ const UserMenu = () => {
       <UserData>
         <UserName>{user.name}</UserName>
         <UserEmail>{user.email}</UserEmail>
-        <UserAvatar></UserAvatar>
       </UserData>
+      <UserAvatar></UserAvatar>
       <LogOutBtn type="button" onClick={() => dispatch(logOut())}>
         Logout
       </LogOutBtn>

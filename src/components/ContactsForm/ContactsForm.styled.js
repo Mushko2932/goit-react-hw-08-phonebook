@@ -21,7 +21,7 @@ export const Field = styled(FormikField)`
 `;
 
 export const FormBtn = styled.button`
-  width: 340px;
+  min-width: 340px;
   height: 30px;
 
   cursor: pointer;

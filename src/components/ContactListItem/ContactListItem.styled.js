@@ -2,8 +2,6 @@ import styled from '@emotion/styled';
 
 export const ContactItem = styled.li`
   display: flex;
-  gap: 60px;
-  align-items: center;
   justify-content: space-between;
 `;
 
@@ -13,19 +11,25 @@ export const ContactBtn = styled.button`
   font-size: 14px;
   min-width: 120px;
   height: 30px;
-  border: none;
-  border-radius: 4px;
-  color: black;
-  font-weight: bold;
   cursor: pointer;
-  box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
-  &:hover {
-    background-color: aquamarine;
-    color: white;
+  background-color: #0079ff;
+  color: #feff86;
+
+  border: none;
+  border-radius: 8px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  :hover,
+  :focus {
+    color: #0079ff;
+    background: #feff86;
   }
 `;
 
 export const ContactInfo = styled.p`
+  width: 600px;
   font-size: 16px;
   font-weight: 500;
 `;

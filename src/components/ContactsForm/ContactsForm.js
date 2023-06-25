@@ -6,12 +6,12 @@ import { Form, FormLabel, FormBtn, Field } from './ContactsForm.styled';
 import { selectContactsList } from 'redux/contacts/selectors';
 import { addContact } from 'redux/contacts/operations';
 
-const ContactShema = Yup.object().shape({
+const ContactSchema = Yup.object().shape({
   name: Yup.string()
     .min(2, 'Too Short!')
     .max(50, 'Too Long!')
     .required('Required'),
-  phone: Yup.string()
+  number: Yup.string()
     .min(2, 'Too Short!')
     .max(13, 'Too Long!')
     .required('Required'),
@@ -37,8 +37,8 @@ export const ContactsForm = ({ onCloseModal }) => {
   };
   return (
     <Formik
-      initialValues={{ name: '', phone: '' }}
-      validationSchema={ContactShema}
+      initialValues={{ name: '', number: '' }}
+      validationSchema={ContactSchema}
       onSubmit={(values, actions) => {
         handleSubmit({ ...values });
         actions.resetForm();
@@ -55,11 +55,11 @@ export const ContactsForm = ({ onCloseModal }) => {
             required
           />
         </FormLabel>
-        <FormLabel htmlFor="phone">
+        <FormLabel htmlFor="number">
           Number
           <Field
             type="tel"
-            name="phone"
+            name="number"
             pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
             title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
             required

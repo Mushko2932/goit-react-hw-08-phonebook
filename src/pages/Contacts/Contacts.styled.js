@@ -1,11 +1,11 @@
 import styled from '@emotion/styled';
 
 export const PageContainer = styled.div`
-  padding: 30px 30px;
-  height: 100vh;
+  padding: 40px;
+  height: 150vh;
 
   border-radius: 32px;
-  background-color: #ece5c7;
+  background-color: #ffffff;
 `;
 
 export const ContactNavWrapper = styled.div`

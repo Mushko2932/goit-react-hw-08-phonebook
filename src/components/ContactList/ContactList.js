@@ -10,15 +10,14 @@ export const ContactList = () => {
   const contacts = useSelector(selectContactsList);
   const filter = useSelector(selectContactsFilter);
 
-  // const normalizedFilter = filter.toLowerCase();
-  const visibleContacts = contacts.filter(contact =>
-    contact.name.toLowerCase().includes(filter)
-  );
+  const visibleContacts = [
+    ...contacts.filter(contact => contact.name.toLowerCase().includes(filter)),
+  ];
 
   return (
     <ContactRoster>
-      {visibleContacts.map(({ id, name, phone }) => (
-        <ContactListItem key={id} id={id} name={name} number={phone} />
+      {visibleContacts.map(({ id, name, number }) => (
+        <ContactListItem key={id} id={id} name={name} number={number} />
       ))}
     </ContactRoster>
   );

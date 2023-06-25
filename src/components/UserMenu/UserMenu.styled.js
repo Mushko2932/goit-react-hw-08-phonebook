@@ -7,34 +7,38 @@ export const UserContainer = styled.div`
 export const UserData = styled.div`
   display: flex;
   flex-direction: column;
+  gap: 10px;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 40px;
 `;
 
 export const UserName = styled.p`
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 14px;
 
   text-align: center;
+  margin: 0;
 
   color: #000000;
 `;
 export const UserEmail = styled.p`
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
 
   text-align: center;
+  margin: 0;
 
   color: #8f8f8f;
 `;
 
 export const UserAvatar = styled.div`
-  width: 80px;
-  height: 80px;
+  width: 40px;
+  height: 40px;
 
   text-align: center;
+  margin-right: 20px;
 
   background-color: #000000;
   border-radius: 8px;
